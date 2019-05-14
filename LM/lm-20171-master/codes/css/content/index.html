@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      counter-reset: paragraph;
+    }
+    p:before {
+      counter-increment: paragraph;
+      content: "P" counter(paragraph) " - ";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rerum velit ipsum ab animi dolore, accusamus mollitia in illum! Error enim fuga labore quod at? Voluptatem, officia pariatur. Est, reiciendis.</p>
+  <p>Rerum ducimus quasi commodi aperiam tenetur. Ipsam sunt sapiente cum asperiores velit maiores doloremque unde odio, ad quas ullam recusandae sit id atque nesciunt saepe, eum ex alias voluptatem! Quo.</p>
+  <p>Amet error fuga illum ipsum magni sunt excepturi architecto aliquam molestiae repudiandae, expedita itaque modi dolore suscipit distinctio laboriosam repellat praesentium nesciunt deleniti. Dignissimos impedit odio nesciunt, at debitis suscipit.</p>
+  <p>Ullam facere doloremque nostrum rerum architecto obcaecati illo quis ea placeat est eligendi possimus a voluptatum optio, maxime repellat amet nemo hic, totam provident, debitis rem quas eius fugit. Facere!</p>
+  <p>Cupiditate voluptates sint explicabo veniam, esse praesentium assumenda odio libero molestias nam, dolor incidunt. Doloremque voluptates voluptatem dolorem dolorum voluptate nihil amet in omnis repudiandae, deleniti tempore. Impedit suscipit, facilis.</p>
+</body>
+</html>

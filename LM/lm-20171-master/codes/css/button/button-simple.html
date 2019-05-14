@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <style>
+    .btn {
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn * {
+      vertical-align: middle;
+      line-height: 40px;
+    }
+    .btn.btn-red:hover {
+      background-color: #B71C1C;
+      box-shadow: 4px 4px 5px 0px #263238; /* http://www.cssmatic.com/box-shadow */
+    }
+    .btn.btn-red:active {
+      box-shadow: 4px 4px 5px 0px #B71C1C;
+    }
+    .btn.btn-shadow:hover {
+      box-shadow: none;
+      background-color: #efefef;
+    }
+    .btn-red {
+      background-color: #EF5350;
+    }
+    .btn-round {
+      border-radius: 10px;
+    }
+    .btn-shadow {
+      border: 1px #000 solid;
+      box-shadow: 4px 4px 5px 0px #263238;
+    }
+    .text-white {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn btn-round btn-red text-white">
+    <i class="material-icons">arrow_back</i> voltar
+  </div>
+  <br>
+  <br>
+  <div class="btn btn-red text-white">
+    <i class="material-icons">arrow_back</i> voltar
+  </div>
+  <br>
+  <br>
+  <div class="btn btn-shadow">
+    <i class="material-icons">arrow_back</i> voltar
+  </div>
+</body>
+</html>

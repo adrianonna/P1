@@ -1,0 +1,21 @@
+p {
+  font-size: 20px;
+  text-align: justify;
+  color: blue;
+}
+
+h1, p {
+  font-family: arial, sans-serif;
+}
+
+p#color-red {
+  color: red;
+}
+
+p.color-green {
+  color: green;
+}
+
+div p {
+  columns: 2;
+}

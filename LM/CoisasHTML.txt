@@ -1,0 +1,108 @@
+<tag atributo="valor"> Conteudo da tag </tag> - Atributo = informação gerando um comportamento esperado.
+
+Atributos:
+src="endereço" = search/procurar
+alt="descrição" - alternative/alternativo
+title="texto" - Texto colocando mouse em cima
+target="_black" - Abre link em nova pagina
+target="_self" - Abre link na mesma pagina
+
+
+HTML
+
+<title></title> - Título/Nome da página
+<!-- --> /* */ - Comentário
+<br/> - Quebra de linha, depois do texto
+<i></i> - Itálico
+<b></b> - Negrito
+<u></u> - sublinhado
+<sub></sub> - texto escrito acima
+<sup></sup> - texto escrito abaixo
+<s></s> - texto riscado
+<p> - Parágrafo
+<del></del> - Risca o texto
+<mark></mark> - marca o texto amarelo como um marca-texto
+<hr size=5 width=100%> - Cria linha horizontal
+<figure><img><figcaption></figcation></figure> - Cria legenda para a imagem
+
+<img src="endereço" title="descrição mouse" alt="descrição" /> - Procura endereço imagem - texto com mouse em cima - descrição texto alternativo
+<a href="endereço"><img src="endereço"></a> - Cria link imagem
+<a href="endereço" target="_blank"></a> - Cria link - abre em nova aba
+<a href="mailto:email"></a> - Cria link para email
+<address>Contato:<a href="contato@contato">contato@contato</a></address> - link para email
+<address>Ligue para:<a href="tel:0800">0800</a></address> - Faz ligação pelo celular
+<ul type="circle/square"></ul> - Lista não ordenada, marcador circulo branco/marcador quadrado preto
+<li></li> - Itens
+
+<ol type="1/a/I" start="5"></ol> - Identifica tipo numérico/alfabético, cria lista ordenada começando em 5
+<li></li> - Itens
+
+<dl></dl> - Lista de definição
+<dt></dt> - Assunto
+<dd></dd> - Definição do assunto
+
+<table border="1"></table> - Cria tabela com borda geral
+<tr></tr> - Cria linhas, usado dentro de TABLE
+<td></td> - Cria colunas, usado dentro de TR
+<th></th> - conteúdo em negrito
+<td align=...>texto</td> - Ajusta conteúdo horizontal
+<td valign=...>texto</td> - Ajusta conteúdo vertical
+
+<tr><td colspan=3>...</td></tr> - Linha com um célula
+<tr><td>...</td><td>...</td><td>...</td> - Linha a baixo com 3 células no mesmo espaço da célula a cima
+
+<tr><td rowspan=3>...</td> - Cria uma linha com espaço para 3 linhas(primeira coluna)
+<td>...</td><td>...</td><td>...</td><td>...</td></tr> - Cria primeira linha pararela a primeira
+<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr> - Cria segunda linha paralela a primeira
+<tr><td>...</td><td>...</td><td>...</td><td>...</td></tr> - Cria terceira linha paralela a primeira
+
+<form></form> - Cria formulário
+<fieldset></fieldset> - Cria grupos no form separados por linha
+<legend></legend> - Nome do grupo na linha que separa
+<label for=""></label> - Cria nome vinculando for e id
+<input type="" id="" name="" placeholder=""/> - Cria um campo de tal tipo(tipos iguais, nomes iguais ex. type=radio" name="sexo; vinculo com for; nome de referência dos dados
+
+<audio controls autoplay loop>  - Cria audio; mostra controles; começa automático; repete infinitamente
+<src="endereço" type="audio/mpeg"/> - Procura audio no endereço; tipo de audio
+</audio>
+
+<video controls poster="endereço"> - Cria vídeo; Coloca imagem de destaque na frente do vídeo
+<src="endereço" type="video/mp4"/>
+</video>
+
+<header></header> - Cabeçalho
+<nav></nav> - Espaço para possível menu
+<section></section> - Espaço central em cima
+<article></article> - Espaço central em baixo
+<aside></aside> - Espaço lateral(siderbar)
+<footer><footer> - Espaço rodapé
+
+id="" - # no css
+class="" - . no css
+
+
+CSS
+h1, h2, p - agrupamento de seletores, é aplicado em todos
+h1 h2 p - p dentro do h2 dentro do h1
+position: (relative/absolute) - absolute é como se tivesse flutuando e relativo é posicionado
+background-image: url() no-repeat - imagem de fundo sem repetir
+color: - Cor da letra
+width: - Largura
+height: - Altura
+max-width: - Largura máxima
+min-height: Altura mínima
+margin: - Margem pra fora
+padding: - Margem pra dentro
+list-style: none - Retira pontos/estilo da lista
+list-style-type: - tipos de marcação da lista
+list-style-image: url() - marcação da lista com imagem
+display: inline-block - Mostra o conteúdo um ao lado do outro/em linha
+text-decoration: none/blink - Retira decorações do texto/texto piscando
+border:(1px solid #000) - Borda
+:hover - Modifica ao passar o mouse em cima
+:nth-child() - passa qual item expecífico mexer
+float: - coloca/flutua determinado conteúdo em determinada posição e afasta o resto do conteúdo
+font-weight: - espeçura da letra/fonte
+line-height: - espaçamento entre linhas
+text-indent: - famoso tab
+

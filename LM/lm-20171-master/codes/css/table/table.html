@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 40%;
+      min-width: 300px;
+    }
+    table, table td, table th {
+      /*border: 1px solid #000;*/
+      border-width: 1px;
+      border-style: solid;
+      border-color: #000;
+    }
+    table td.matricula {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:50%">Aluno</th>
+        <th>Matrícula</th>
+        <th>Nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fulano</td>
+        <td class="matricula">1234</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Sicrano</td>
+        <td class="matricula">4321</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2" style="text-align:center">Média</td>
+        <td>9,5</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 200px;
+      grid-gap: 50px;
+    }
+
+    .linear {
+      background-image: linear-gradient(45deg, #000, #fff);
+    }
+
+    .multiple {
+      background-image: linear-gradient(45deg, rgba(0,0,0,.70) 10%, transparent), url(image1.jpg);
+      background-size: cover;
+    }
+
+    .trendbg {
+      background-image: linear-gradient(45deg, rgba(0, 145, 200, .6), rgba(1, 193, 120, .6)), url(image1.jpg);
+      background-size: cover;
+    }
+
+    .opacity {
+      background-image: url(image1.jpg);
+      opacity: .4;
+    }
+
+    .reapeting {
+      background-image: repeating-linear-gradient(45deg, #000 25px, #fff 50px, #000 75px);
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient linear"></div>
+  <div class="gradient multiple"></div>
+  <div class="gradient trendbg"></div>
+  <div class="gradient opacity"></div>
+  <div class="gradient reapeting"></div>
+</body>
+</html>

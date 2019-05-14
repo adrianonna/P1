@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE livros [
+  <!ELEMENT livros (livro+)>
+  <!ELEMENT livro (titulo,autores,editora)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autores (autor+)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT editora (nome,endereco?)>
+  <!ELEMENT nome (#PCDATA)>
+  <!ELEMENT endereco (rua,bairro,cep)>
+  <!ELEMENT rua (#PCDATA)>
+  <!ELEMENT bairro (#PCDATA)>
+  <!ELEMENT cep (#PCDATA)>
+  <!ATTLIST titulo edicao CDATA #REQUIRED>
+]>
+<livros>
+  <livro>
+      <titulo edicao="2001">XML Essencial</titulo>
+      <autores>
+        <autor>Luiz</autor>
+        <autor>Edemberg</autor>
+        <autor>Crishane</autor>
+      </autores>
+      <editora>
+        <nome>Springer</nome>
+        <endereco>
+            <rua>1o de Maio</rua>
+            <bairro>Jaguaribe</bairro>
+            <cep>58100000</cep>
+        </endereco>
+        <endereco>
+            <rua>1o de Maio</rua>
+            <bairro>Jaguaribe</bairro>
+            <cep>58100000</cep>
+        </endereco>
+        <endereco>
+            <rua>1o de Maio</rua>
+            <bairro>Jaguaribe</bairro>
+            <cep>58100000</cep>
+        </endereco>
+      </editora>
+  </livro>
+  <livro>
+      <titulo edicao="2001">HTML</titulo>
+      <autores>
+        <autor>Luiz</autor>
+      </autores>
+      <editora>
+        <nome>LTDA</nome>
+      </editora>
+  </livro>
+</livros>

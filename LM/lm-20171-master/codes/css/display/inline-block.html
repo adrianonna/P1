@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      margin: 0;
+    }
+
+    #main {
+      background-color: #ccc;
+      width: 960px;
+      margin: 0 auto;
+      /*
+        remove whitespace between inline-block
+        https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+        https://davidwalsh.name/remove-whitespace-inline-block
+        http://reallygood.work/03/13/an-inline-block-intervention/
+      */
+      white-space: nowrap;
+      /*overflow : hidden;*/
+      font-size: 0;
+    }
+
+    .section {
+      vertical-align: top;
+      display: inline-block;
+      width: 50%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div class="section" style="background-color:green"></div>
+    <div class="section" style="background-color:blue"></div>
+  </div>
+</body>
+</html>
